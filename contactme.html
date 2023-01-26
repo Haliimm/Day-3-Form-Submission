@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="left-navbar">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="logo">
+            </div>
+            <ul class="ul-navbar">
+                <li class="li-navbar">
+                    <a href="index.html" class="a-navbar">Home</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="blog.html" class="a-navbar">My Blog</a>
+                </li>
+            </ul>
+        </div>
+        <div class="right-navbar">
+            <a href="contactme.html" class="a-Rnavbar" id="contact-active">Contact Me</a>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Form -->
+    <div class="form-contact">
+        <div class="form-container">
+            <form id="from" action="" method="">
+                <h1>GET IN TOUCH</h1>
+                <div class="input">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Type Your Name"> 
+                </div>
+                <div class="input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Type Your Email">
+                </div>
+                <div class="input">
+                    <label for="telp">Phone Number</label>
+                    <input type="tel" id="telp" placeholder="Type Your Phone Number">
+                </div>
+                <div class="input">
+                    <label for="subject">Subject</label>
+                    <select name="subject" id="subject">
+                        <option value="none" selected disabled hidden>Select an Option</option>
+                        <option value="Let's be friends">Let's be friends</option>
+                        <option value="Let's Create a Project">Let's Create a Project</option>
+                        <option value="I want to hire you">I want to hire you</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="message">Your Message</label>
+                    <textarea name="text" id="message" cols="30" rows="10" placeholder="Type your message"></textarea>
+                </div>
+
+                <div class="form-button">
+                    <button type="button" onclick="getData()" name="submit" id="submit">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- End Form -->
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/sweetalert2.all.min.js"></script>
+
+</body>
+
+</html>
